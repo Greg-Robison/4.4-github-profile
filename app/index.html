@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 4 github profile</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="header container-fluid">
+        <div class="row">
+            <div class="logo col-md-3">
+                <nav>
+                    <a href="<a class=" header-logo-invertocat " href="https://github.com/ " data-hotkey="g d " aria-label="Homepage " data-ga-click="Header, go to dashboard, icon:logo ">
+              <svg aria-hidden="true " class="octicon octicon-mark-github " height="28 " version="1.1 " viewBox="0 0 16 16 " width="28 "><path fill-rule="evenodd " d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+                        1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16
+                        1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z "></path></svg>
+            </a></a>
+          </nav>
+        </div>
+        <div class="input-bar col-md-3 ">
+          <input  type="text " class="bar " name=" " value="Search GitHub ">
+        </div>
+        <div class="span1 col-md-3 ">
+          <span class="span-links1 "><a href="# ">Pull Requests</a></span>
+          <span class="span-links1 "><a href="# ">Issues</a></span>
+          <span class="span-links1 "><a href="# ">Gist</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="main-body container ">
+      <div class="row ">
+        <div class="left-side col-md-3 ">
+          <!-- <img class="my-pic " src="https://unsplash.it/230/230?image=1047 " alt=" ">
+          <h2 class="my-name ">name</h2>
+          <h3 class="user-name ">user name</h3>
+          <p class="bio ">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <h4 class="city-state ">Taylors, SC</h4>
+          <h4 class="e-mail "><a href="# "></a>gjrobison64@gmail.com</h4> -->
+        </div>
+        <div class="col-md-8 ">
+          <div class="span2 ">
+            <span class="span-links2 "><a href="# ">Overview</a></span>
+            <span class="span-links2 "><a href="# ">Repositories</a></span>
+            <span class="span-links2 "><a href="# ">Star</a></span>
+            <span class="span-links2 "><a href="# ">Followers</a></span>
+            <span class="span-links2 "><a href="# ">Following</a></span>
+
+          </div>
+          <div class="input-row ">
+            <span><input type="text " class="search bar " name=" " value="Search Repositories "></span>
+            <span><button type="button " class="type-button " name="button ">Type: All</button></span>
+            <span><button type="button " class="language-button " name="button ">Language: All</button></span>
+            <span><button type="button " class="new-button " name="button ">New</button></span>
+
+          </div>
+          <div class="repo-section ">
+            <!-- <div class="data-from-github ">
+              <h2 class="repo-info "><a href="# ">4.2-etsy-recreation</a></h2>
+            </div>
+            <div class=" ">
+              <div class="circle "></div>
+              <span>HTML</span>
+              <span>Updated 10 Hours Ago</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<script id='profile-template' type="text/x-handlebars-template ">
+  <img class="my-pic " src="{{ avatar_url }} " alt=" ">
+  <h2 class="my-name ">{{ name }}</h2>
+  <h3 class="user-name ">{{ login }}</h3>
+  <p class="bio ">{{ bio }}</p>
+  <h4 class="city-state ">{{ location }}</h4>
+  <h4 class="e-mail "><a href="# "></a>{{ email }}</h4>
+</script>
+
+<script id='repo-template' type="text/x-handlebars-template ">
+  <div class="repo-box ">
+
+    <div class="data-from-github ">
+      <h2 class="repo-info "><a href="# ">{{ name }}</a></h2>
+    </div>
+    <div class=" ">
+      <div class="circle "></div>
+      <span>{{ language }}</span>
+      <span>{{ formatDate }}</span>
+    </div>
+</div>
+</script>
+
+    <script src="js/bundle.js "></script>
+  </body>
+</html>

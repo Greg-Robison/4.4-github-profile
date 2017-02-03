@@ -1,0 +1,134 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+.header{
+  max-width: 100%;
+  height: 50px;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #E5E5E5;
+}
+.logo{
+  margin-top: 9px;
+  margin-left: 135px;
+}
+.input-bar{
+  margin-top: 9px;
+  margin-left: -280px;
+}
+.bar{
+  width: 350px;
+  height: 30px;
+  border-radius: 3px;
+  border-color: #E5E5E5;
+}
+.span1{
+  margin-left: 55px;
+  margin-top: 15px;
+}
+.span-links1{
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  a{
+  color: #333333;
+  text-decoration: none;
+  }
+}
+.left-side{
+  margin-left: 85px;
+}
+.my-pic{
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.user-name{
+  font-weight: 400;
+  font-size: 20px;
+  color: #666666;
+}
+p{
+  color: #767676;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+.e-mail{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+.span2{
+  margin-top: 35px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dddddd;
+
+}
+.span-links2{
+  margin-left: 20px;
+  padding-right: 40px;
+a{
+  color: #767676;
+  text-decoration: none;
+}
+}
+.input-row{
+padding-top: 15px;
+padding-bottom: 15px;
+border-bottom: 1px solid #dddddd;
+}
+.search-bar{
+  width: 300px;
+  border-radius: 3px;
+}
+.new-button{
+  float: right;
+  border-radius: 3px;
+  color: #ffffff;
+  background: linear-gradient(#9FDC77, #6DAD42);
+  width: 75px;
+}
+.language-button{
+  width: 150px;
+  border-radius: 3px;
+  color: black;
+  background: linear-gradient(#FCFCFC, #eeeeee);
+  padding-left: 20px;
+  height: 30px;
+}
+.type-button{
+  width: 100px;
+  border-radius: 3px;
+  color: black;
+  height: 30px;
+  margin-bottom: 2px;
+  background: linear-gradient(#FCFCFC, #eeeeee)
+}
+.repo-box{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dddddd
+}
+.repo-info{
+  font-size: 20px;
+  color: #4B75BD;
+  text-decoration-color: #4B75BD;
+}
+.circle{
+
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: red;
+}
