@@ -22,16 +22,22 @@ $.ajax('https://api.github.com/users/Greg-Robison').done(function(data){
   $('.left-side').append(template(data));
 
 });
-// var picture = $('#avatar-template').html();
-// var template = Handlebars.compile(picture);
-// $.ajax('https://api.github.com/users/Greg-Robison').done(function(data){
-//   console.log(data);
-//   $('#my-avatar').append(template(data));
+
+
+// var thumbnail = $('#avatar-template').html();
+// var template = Handlebars.compile(thumbnail);
+// $.ajax('https://api.github.com/users/Greg-Robison').done(function(data1){
+//   console.log(data1);
+//   $('#my-avatar').append(template(data1));
 // });
+
+
 var repo = $('#repo-template').html();
 var template2 = Handlebars.compile(repo);
 $.ajax('https://api.github.com/users/Greg-Robison/repos').done(function(data){
   var sortedDate = _.sortBy(data, "updated_at").reverse();
+
+
   // console.log('sorted', sortedDate);
 //////////
   sortedDate.forEach(function(info){
@@ -47,43 +53,3 @@ $.ajax('https://api.github.com/users/Greg-Robison/repos').done(function(data){
 //////////
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// fetchJSONP(url, logData);
-//
-//
-//
-// function fetchJSONP(url, callback) {
-//     var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
-//     var script = document.createElement('script');
-//
-//     window[callbackName] = function(data) {
-//         delete window[callbackName];
-//         document.body.removeChild(script);
-//         callback(data);
-//     };
-//
-//     script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
-//     document.body.appendChild(script);
-// }
