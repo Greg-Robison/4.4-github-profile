@@ -20,7 +20,14 @@ console.log(template);
 $.ajax('https://api.github.com/users/Greg-Robison').done(function(data){
   console.log(data);
   $('.left-side').append(template(data));
+
 });
+// var picture = $('#avatar-template').html();
+// var template = Handlebars.compile(picture);
+// $.ajax('https://api.github.com/users/Greg-Robison').done(function(data){
+//   console.log(data);
+//   $('#my-avatar').append(template(data));
+// });
 var repo = $('#repo-template').html();
 var template2 = Handlebars.compile(repo);
 $.ajax('https://api.github.com/users/Greg-Robison/repos').done(function(data){

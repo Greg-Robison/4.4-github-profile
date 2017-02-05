@@ -48,6 +48,17 @@ img {
   text-decoration: none;
   }
 }
+
+.my-avatar{
+  max-width: 25px;
+max-height: 25px;
+
+  border-radius: 3px;
+}
+
+.main-body{
+  border-bottom: 1px solid #dddddd;
+}
 .left-side{
   margin-left: 85px;
 }
@@ -98,6 +109,7 @@ border-bottom: 1px solid #dddddd;
   color: #ffffff;
   background: linear-gradient(#9FDC77, #6DAD42);
   width: 75px;
+
 }
 .language-button{
   width: 150px;
@@ -131,4 +143,15 @@ border-bottom: 1px solid #dddddd;
   height: 10px;
   border-radius: 100%;
   background-color: red;
+}
+.footer{
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dddddd;
+}
+.footer-nav{
+  background-color: #f9f9f9;
+  font-size: 13px;
+  padding-right: 20px;
+
 }

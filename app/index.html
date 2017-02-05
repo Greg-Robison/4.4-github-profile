@@ -27,6 +27,11 @@
           <span class="span-links1 "><a href="# ">Pull Requests</a></span>
           <span class="span-links1 "><a href="# ">Issues</a></span>
           <span class="span-links1 "><a href="# ">Gist</a></span>
+          <span class="span-links1-2"><a href="#"><img src="images/plus.svg" alt=""></a></span>
+          <span class="span-links1-2"><a href="#"><img src="images/triangle-down.svg" alt=""></a></span>
+          <!-- <span class="box">""</span> -->
+          <div id="my-avatar" class="my-avatar-1"></div>
+          <span class="span-links1-2"><a href="#"><img src="images/triangle-down.svg" alt=""></a></span>
         </div>
       </div>
     </div>
@@ -59,9 +64,9 @@
           </div>
           <div class="input-row ">
             <span><input type="text " class="search bar " name=" " value="Search Repositories "></span>
-            <span><button type="button " class="type-button " name="button ">Type: All</button></span>
-            <span><button type="button " class="language-button " name="button ">Language: All</button></span>
-            <span><button type="button " class="new-button " name="button ">New</button></span>
+            <span><button type="button " class="type-button " name="button ">Type: All <img src="images/triangle-down.svg" alt=""></button></span>
+            <span><button type="button " class="language-button " name="button ">Language: All <img src="images/triangle-down.svg" alt=""></button></span>
+            <span><button type="button " class="new-button " name="button "><img src="images/repo.svg" alt=""> New</button></span>
 
           </div>
           <div class="repo-section ">
@@ -78,14 +83,44 @@
       </div>
 
     </div>
+    <div class="footer container ">
+      <div class="row ">
+        <div class="col-md-5 ">
+          <span class="footer-nav">&copy; 2017 GitHub inc.</span>
+          <span class="footer-nav"><a href="# ">Terms </a></span>
+          <span class="footer-nav"><a href="# ">Privacy </a></span>
+          <span class="footer-nav"><a href="# ">Security</a></span>
+          <span class="footer-nav"><a href="# ">Status</a></span>
+          <span class="footer-nav"><a href="# ">Help</a></span>
+        </div>
+        <div class="col-md-1">
+          <span><img src="images/mark-github.svg" alt=""></span>
+        </div>
+        <div class="col-md-5 ">
+          <span class="footer-nav"><a href="# ">Contact GitHub</a></span>
+          <span class="footer-nav"><a href="# ">api</a></span>
+          <span class="footer-nav"><a href="# ">Training</a></span>
+          <span class="footer-nav"><a href="# ">Shop</a></span>
+          <span class="footer-nav"><a href="# ">Blog</a></span>
+          <span class="footer-nav"><a href="# ">About</a></span>
+        </div>
+      </div>
+    </div>
 
 <script id='profile-template' type="text/x-handlebars-template ">
   <img class="my-pic " src="{{ avatar_url }} " alt=" ">
   <h2 class="my-name ">{{ name }}</h2>
   <h3 class="user-name ">{{ login }}</h3>
   <p class="bio ">{{ bio }}</p>
-  <h4 class="city-state ">{{ location }}</h4>
-  <h4 class="e-mail "><a href="# "></a>{{ email }}</h4>
+  <div>
+  <span class="city-state "><img src="images/location.svg" alt=""></span>
+  <span class="city-state  ">{{ location }}</span>
+  </div>
+  <span class="e-mail "><img src="images/mail.svg" alt=""></span>
+  <span class="e-mail "><a href="# ">{{ email }}</a></span>
+</script>
+<script id='avatar-template' type="text/x-handlebars-template">
+    <span><a href="#"><img  src="{{ avatar_url }}" alt=""></a></span>
 </script>
 
 <script id='repo-template' type="text/x-handlebars-template ">
